@@ -1,0 +1,12 @@
+# Dataset config read by train_detector.py through Ultralytics model.train(data=...).
+# Only labels ship here as a format reference. The image tiles are client drone
+# imagery and are withheld. Drop images into images/{training,validation,test}
+# and set an absolute path before training. Paths below are relative to this file.
+path: .
+train: images/training
+val: images/validation
+test: images/test
+
+nc: 1
+names:
+  0: pineapple
